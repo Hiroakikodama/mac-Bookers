@@ -13,3 +13,120 @@
  *= require_tree .
  *= require_self
  */
+
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: verdana, arial, helvetica, sans-serif;
+	line-height: 18px;
+	font-size: 13px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.clearfix {
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.notice {
+	color: green;
+	margin: 33px;
+}
+
+.bookers {
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.top-box {
+	margin: 33px;
+}
+
+.top-headline {
+	line-height: 18px;
+	margin: 33px 0;
+	font-size: 2em;
+}
+
+.top-text {
+	margin: 33px;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.index-new {
+	margin: 33px;
+}
+
+.index-headline {
+	margin: 33px 0;
+	font-size: 2em;
+
+}
+
+table {
+	/*width: 100%;*/
+	/*table-layout: fixed;*/
+	/*vertical-align: middle;*/
+}
+
+td {
+	padding: 1px 5px 7px;
+	/*word-break: break-all;*/
+}
+
+.action {
+	text-decoration: underline;
+}
+
+.new-headline {
+	font-size: 1.5em;
+	margin: 16.185px 0;
+}
+
+.show-action {
+	float: left;
+}
+
+span {
+	font-weight: bold;
+}
+
+.show-box {
+	margin: 33px;
+}
+
+.show-text {
+	margin: 33px;
+}
+
+.show-action {
+	text-decoration: underline;
+}
+
+.edit-box {
+	margin: 33px;
+}
+
+.edit-headline {
+	font-size: 2em;
+	margin: 17.42px 0;
+}
+
+.edit-title {
+	margin-bottom: 10px;
+}
+
+.edit-body {
+	margin-bottom: 10px;
+}

@@ -1,16 +1,31 @@
-<h1>Editing Book</h1>
+<div class="edit-box">
+
+	<% if flash[:notice] %>
+	<div class="notice">
+		<%= flash[:notice] %>
+	</div>
+	<% end %>
+
+<h1 class="edit-headline">Editing Book</h1>
+<% if @book.errors.any? %>
+		<p>error</p>
+		<ul>
+			<% @book.errors.full_messages.each do |message| %>
+				<li><%= message %></li>
+			<% end %>
+		</ul>
+	<% end %>
 <%= form_for(@book) do |f| %>
 
-<p>Title</p>
+<p class="edit-title">Title</p>
 <%= f.text_field :title %>
 
-<p>Body</p>
+<p class="edit-body">Body</p>
 <%= f.text_area :body %>
 
-<%= f.submit 'Update Book' %>
+<br><%= f.submit 'Update Book' %>
 
-<%= link_to 'show', book_path(params[:id])%>
-<p>|</p>
-<%= link_to 'Back', books_path %>
+<p><%= link_to 'Show', book_path(params[:id])%> | <%= link_to 'Back', books_path %></p>
 
 <% end %>
+</div>
